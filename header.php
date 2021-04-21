@@ -27,12 +27,6 @@ if ( ! defined( 'ABSPATH' ) ) {
     <?php
 hello_elementor_body_open(); ?>
 
-
-    <img src="images/soege.png" alt="Søgefelt">
-    <img src="images/fb.png" alt="Facebook-ikon">
-    <img src="images/insta.png" alt="Insta-ikon">
-
-
     <?php if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
 	get_template_part( 'template-parts/header' );
 }
