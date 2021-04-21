@@ -13,20 +13,26 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
+
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<?php $viewport_content = apply_filters( 'hello_elementor_viewport_content', 'width=device-width, initial-scale=1' ); ?>
-	<meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<?php wp_head(); ?>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <?php $viewport_content = apply_filters( 'hello_elementor_viewport_content', 'width=device-width, initial-scale=1' ); ?>
+    <meta name="viewport" content="<?php echo esc_attr( $viewport_content ); ?>">
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
 
-<?php
+    <?php
 hello_elementor_body_open(); ?>
-    
-<p>Custom header</p>
 
-<?php if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
+
+    <img src="images/soege.png" alt="Søgefelt">
+    <img src="images/fb.png" alt="Facebook-ikon">
+    <img src="images/insta.png" alt="Insta-ikon">
+
+
+    <?php if ( ! function_exists( 'elementor_theme_do_location' ) || ! elementor_theme_do_location( 'header' ) ) {
 	get_template_part( 'template-parts/header' );
 }
