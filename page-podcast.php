@@ -33,7 +33,7 @@ get_header();
     let categories;
     let filtrerPod = "alle";
 
-    const liste = document.querySelector("#overskrift");
+    const liste = document.querySelector("#oversigt");
     const skabelon = document.querySelector("template");
     let filterPod = "alle";
     document.addEventListener("DOMContentLoaded", start);
@@ -92,8 +92,8 @@ get_header();
 
                 const klon = skabelon.cloneNode(true).content;
                 klon.querySelector("img").src = podcast.billede.guid;
-                klon.querySelector("p").textContent = pocast.kortbeskrivelse;
-                klon.querySelector("h2").textContent = pocast.titel;
+                klon.querySelector("p").textContent = podcast.kortbeskrivelse;
+                klon.querySelector("h2").textContent = podcast.title.rendered;
                 klon.querySelector("article").addEventListener("click", () => {
                     location.href = podcast.link;
                 })
