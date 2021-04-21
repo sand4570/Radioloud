@@ -15,8 +15,14 @@ get_header();
             <div class="singlebillede">
 
                 <h2 class="titel"></h2>
+                <a href="https://open.spotify.com/" target=”_blank”>
+                    <img src="images/download.png" alt="Spotify-ikon">
+                </a>
+                <a href="">
+                    <img src="images/download-kopi.png" alt="Afspil-knap">
+                </a>
                 <h3 class="underoverskrift"></h3>
-                <p></p>
+                <p class="txt"></p>
             </div>
         </article>
 
@@ -31,14 +37,14 @@ get_header();
     async function getJson() {
         console.log("getJson");
         const data = await fetch(dbUrl);
-        rute = await data.json();
+        podcast = await data.json();
         visPodcasts();
     }
 
     function visPodcasts() {
         console.log("visPodcasts");
         document.querySelector(".titel").textContent = podcast.title.rendered;
-        document.querySelector("p").textContent = podcast.langbeskrivelse;
+        document.querySelector(".txt").textContent = podcast.beskrivelse;
         document.querySelector(".underoverskrift").textContent = podcast.title.rendered;
     }
 
