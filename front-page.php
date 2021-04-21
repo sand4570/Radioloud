@@ -11,10 +11,9 @@ get_header();
     <main id="main" class="site-main">
     
         <?php
-        
-        elementor_theme_do_location( 'front' ) ) {
+
 		get_template_part( 'template-parts/front' );
-        }
+
         ?>
         
         
