@@ -59,7 +59,7 @@ get_header();
 
     function opretKnapper() {
         categories.forEach(cat => {
-            document.querySelector("#filtrering").innerHTML += `<button class="filter" data-rute="${cat.id}">${cat.name}</button>`
+            document.querySelector("#filtrering").innerHTML += `<button class="filter" data-podcast="${cat.id}">${cat.name}</button>`
 
         })
 
@@ -74,7 +74,7 @@ get_header();
     }
 
     function filtrering() {
-        filtrerRute = this.dataset.podcast;
+        filtrerPod = this.dataset.podcast;
         console.log(filtrerPod);
 
         document.querySelector(".valgt").classList.remove("valgt");
@@ -85,7 +85,7 @@ get_header();
     }
 
     function visPodcasts() {
-        console.log(ruter);
+        console.log(podcasts);
         liste.innerHTML = "";
         podcasts.forEach(podcast => {
             if (filtrerPod == "alle" || podcast.categories.includes(parseInt(filtrerPod))) {
