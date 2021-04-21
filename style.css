@@ -14,17 +14,18 @@ Auther: Sandie Neander Petersen
 
 /* Om os */
 
-.wp-block-group__inner-container block-editor-block-list__layout {
+.wp-block-group__inner-container {
     display: grid;
-
+    grid-template-columns: 1fr, 1fr;
 }
 
 #block-dc12e2cc-fb2a-4ad3-abeb-c2dad5e750c3 {
+    grid-column: 1 / 2
 
 }
 
 .wp-block-group block-editor-block-list__block wp-block {
-
+    grid-column: 2 / 3
 }
 
 /* Om os Slut */
