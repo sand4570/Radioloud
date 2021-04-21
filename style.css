@@ -19,12 +19,12 @@ Auther: Sandie Neander Petersen
     grid-template-columns: 1fr, 1fr;
 }
 
-#block-dc12e2cc-fb2a-4ad3-abeb-c2dad5e750c3 {
+#omosIMG {
     grid-column: 1 / 2
 
 }
 
-.wp-block-group block-editor-block-list__block wp-block {
+.wp-block-group {
     grid-column: 2 / 3
 }
 
