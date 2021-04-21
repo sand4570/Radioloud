@@ -10,7 +10,6 @@ get_header();
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
 
-        <p>Insert loop html and js here</p>
         <h1>Podcasts</h1>
         <nav id="filtrering">
             <button data-podcast="alle" class="valgt alleknap">Alle</button>
@@ -23,6 +22,7 @@ get_header();
     <article class="article">
         <img src="" alt="" class="billede">
         <h2 class="titel"></h2>
+        <h3 class="underoverskrift"></h3>
         <p></p>
         <button class="button">Læs mere</button>
     </article>
