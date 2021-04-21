@@ -1,4 +1,4 @@
-/*
+/* CSS document
 
 Theme name: radioloud
 Template: hello-elementor
@@ -16,7 +16,7 @@ Auther: Sandie Neander Petersen
 
 .wp-block-group__inner-container {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 #omosIMG {
