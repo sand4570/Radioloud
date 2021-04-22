@@ -23,19 +23,19 @@ get_header();
             <img src="" alt="" class="billede">
         </article>
 
-        <section id="episoder">
-            <template>
-                <article>
-                    <img src="" alt="">
-                    <h3></h3>
-                    <p class="beskrivelse"></p>
-                    <button class="button">Læs mere</button>
-                </article>
-            </template>
-        </section>
+        <section id="episoder"></section>
 
     </main>
 </section>
+
+<template>
+    <article>
+        <img src="" alt="">
+        <h3></h3>
+        <p class="beskrivelse"></p>
+        <button class="button">Læs mere</button>
+    </article>
+</template>
 
 
 <script>
@@ -74,10 +74,11 @@ get_header();
         let temp = document.querySelector("template");
         episoder.forEach(episode => {
             console.log("loop id:", aktuelpodcast);
-            if (episode.horer_til_podcast == aktuelpodcast) {
+            if (episode.horer_til_podcast[0].id == aktuelpodcast) {
                 console.log("loop kører id:", aktuelpodcast);
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector("h2").textContent = episode.title.rendered;
+                klon.querySelector("h3").textContent = episode.title.rendered;
+                klon.querySelector("img").src = episode.billede.guid;
                 klon.querySelector(".beskrivelse").innerHTML = episode.episodenr;
 
                 klon.querySelector("article").addEventListener("click", () => {
