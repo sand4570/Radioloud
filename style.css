@@ -11,6 +11,23 @@ Auther: Sandie Neander Petersen
 
 /* Header SLUT */
 
+/* FRONT PAGE */
+
+#page-container {
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+}
+
+#news {
+    grid-column: 1 / 2;
+}
+
+#front {
+    grid-column: 2 / 3;
+}
+
+/* FRONT PAGE SLUT */
+
 /* Sendeplan */
 
 /* Styling af datoer */
