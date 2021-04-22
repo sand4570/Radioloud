@@ -11,6 +11,7 @@ get_header();
     <main id="main" class="site-main">
 
         <button class="singletilbage">Tilbage</button>
+
         <article class="singlearticle">
             <h2 class="titel"></h2>
             <a href="https://open.spotify.com/" target=”_blank”>
