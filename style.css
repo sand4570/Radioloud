@@ -27,6 +27,10 @@ Auther: Sandie Neander Petersen
 
 .txt{
     grid-column: 2 / 3;
+
+}
+
+.txt .wp-block-group__inner-container {
     display: flex;
     flex-direction: column;
 }
