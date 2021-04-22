@@ -43,7 +43,8 @@ get_header();
     let episoder;
     let aktuelpodcast = <?php echo get_the_ID() ?>;
 
-    const dbUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/podcast/" + <?php echo get_the_ID() ?>;
+    const dbUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/podcast/" + aktuelpodcast;
+    const episodeUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/episoder?per_page=100";
 
     async function getJson() {
         console.log("getJson");
