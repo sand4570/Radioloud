@@ -40,6 +40,8 @@ get_header();
 
 <script>
     let podcast;
+    let episoder;
+    let aktuelpodcast = <?php echo get_the_ID() ?>;
 
     const dbUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/podcast/" + <?php echo get_the_ID() ?>;
 
