@@ -12,17 +12,23 @@ get_header();
 
         <button class="singletilbage">Tilbage</button>
 
-        <article class="singlearticle">
-            <h2 class="titel"></h2>
-            <a href="https://open.spotify.com/" target=”_blank”>
-                <img src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/download.png" alt="Spotify-ikon">
-            </a>
-            <a href="">
-                <img src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/download-kopi.png" alt="Afspil-knap">
-            </a>
-            <p class="txt"></p>
-            <p id="beskrivelse"></p>
-            <img src="" alt="" class="billede">
+        <article class="singleepisode">
+            <div>
+                <h2 class="titel"></h2>
+                <p class="txt"></p>
+                <p id="beskrivelse"></p>
+                <div class="ikoner">
+                    <a href="https://open.spotify.com/" target=”_blank”>
+                        <img src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/download.png" alt="Spotify-ikon">
+                    </a>
+                    <a href="">
+                        <img src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/download-kopi.png" alt="Afspil-knap">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <img src="" alt="" class="billede">
+            </div>
         </article>
     </main>
 </section>
