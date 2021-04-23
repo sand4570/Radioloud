@@ -14,15 +14,16 @@ get_header();
         <article class="singlearticle">
             <h2 class="titel"></h2>
             <a href="https://open.spotify.com/" target=”_blank”>
-                <img src="wp-content/themes/radioloud/images/download.png" alt="Spotify-ikon">
+                <img src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/download.png" alt="Spotify-ikon">
             </a>
             <a href="">
-                <img src="wp-content/themes/radioloud/images/download-kopi.png" alt="Afspil-knap">
+                <img src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/download-kopi.png" alt="Afspil-knap">
             </a>
             <p class="txt"></p>
             <img src="" alt="" class="billede">
         </article>
 
+        <h3>Episoder</h3>
         <section id="episoder"></section>
 
     </main>
