@@ -30,15 +30,20 @@ button {
     color: #E0043C;
 }
 
-[type=button]:focus,
-[type=button]:hover,
-[type=submit]:focus,
-[type=submit]:hover,
-button:focus,
-button:hover {
+#filtrering button:focus {
     background-color: #E0043C;
     color: white;
 }
+
+#filtrering button:hover {
+    background-color: #E0043C;
+    color: white;
+}
+
+/* [type=button]:focus, [type=button]:hover, [type=submit]:focus, [type=submit]:hover, button:focus, button:hover {
+    background-color: #E0043C;
+    color: white;
+} */
 
 .valgt {
     background-color: #E0043C;
