@@ -78,7 +78,7 @@ get_header();
             if (episode.horer_til_podcast[0].id == aktuelpodcast) {
                 console.log("loop kører id:", aktuelpodcast);
                 let klon = temp.cloneNode(true).content;
-                klon.querySelector("h3").textContent = episode.title.rendered;
+                klon.querySelector("h3").innerHTML = episode.title.rendered;
                 klon.querySelector("img").src = episode.billede.guid;
                 klon.querySelector(".beskrivelse").innerHTML = episode.episodenr;
 
