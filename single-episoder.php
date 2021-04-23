@@ -20,6 +20,7 @@ get_header();
                 <img src="wp-content/themes/radioloud/images/download-kopi.png" alt="Afspil-knap">
             </a>
             <p class="txt"></p>
+            <p id="beskrivelse"></p>
             <img src="" alt="" class="billede">
         </article>
     </main>
@@ -47,6 +48,7 @@ get_header();
         document.querySelector(".titel").textContent = episode.title.rendered;
         document.querySelector(".txt").textContent = episode.episodenr;
         document.querySelector(".billede").src = episode.billede.guid;
+        document.querySelector("#beskrivelse").textContent = episode.episodebeskrivelse;
 
     }
 
