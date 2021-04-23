@@ -7,19 +7,36 @@ Auther: Sandie Neander Petersen
 
 */
 
+/* LANDING PAGE*/
+
+h1,
+h2,
+h3,
+h4 {}
+
+/* LANDING PAGE SLUT*/
+
 /* FILTRERINGSKANPPER */
 
-.alleknap, .filter {
+.alleknap,
+.filter {
     margin-left: 1.7vw;
 }
 
-[type=button], [type=submit], button  {
+[type=button],
+[type=submit],
+button {
     border-color: #E0043C;
     color: #E0043C;
 }
 
-[type=button]:focus, [type=button]:hover, [type=submit]:focus, [type=submit]:hover, button:focus, button:hover {
-   background-color: #E0043C;
+[type=button]:focus,
+[type=button]:hover,
+[type=submit]:focus,
+[type=submit]:hover,
+button:focus,
+button:hover {
+    background-color: #E0043C;
     color: white;
 }
 
@@ -37,9 +54,10 @@ Auther: Sandie Neander Petersen
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 30px;
     margin: 1rem;
+    cursor: pointer;
 }
 
-h2 {
+h2 .titel {
     font-size: 1.7rem;
 }
 
@@ -48,12 +66,114 @@ h2 {
 /* LOOP VIEW SLUT */
 
 
+
+/*SINGLEVIEW PODCAST */
+
+.singlearticle {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+}
+
+.ikoner img {
+    width: 10%;
+}
+
+.afspilknap {
+    margin-left: 2vw;
+}
+
+#episoder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 1rem;
+}
+
+#episoder h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#episoder p {
+    font-size: 1rem;
+}
+
+#episoder img {
+    width: 80%;
+}
+
+.singletilbage:hover,
+.button:hover,
+.button:active {
+    background-color: #E0043C;
+    color: white;
+}
+
+.singletilbage {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+.button {
+    border-color: #E0043C;
+    color: #E0043C;
+}
+
+/*SINGLEVIEW PODCAST SLUT */
+
+/*SINGLEVIEW EPISODER */
+
+.singleepisode {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 5vw;
+}
+
+.ikoner img {
+    width: 10%;
+}
+
+.afspilknap {
+    margin-left: 2vw;
+}
+
+#episoder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin: 1rem;
+}
+
+#episoder h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+#episoder p {
+    font-size: 1rem;
+}
+
+#episoder img {
+    width: 80%;
+}
+
+
+/*SINGLEVIEW EPISODER SLUT */
+
+
+
 /* Sendeplan */
 
 /* Styling af datoer */
 .days .wp-block-group__inner-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 3vw;
+    margin-top: 2vw;
 }
 
 #day1 {
@@ -62,6 +182,7 @@ h2 {
 
 #day2 {
     grid-column: 2 / 3;
+    color: #e0043c;
 }
 
 #day3 {
@@ -79,6 +200,9 @@ h2 {
 #kl1 {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20vh;
 }
 
 #img1 {
@@ -93,14 +217,23 @@ h2 {
     flex-direction: column;
 }
 
+.txt1 .wp-block-group__inner-container h3 {
+    font-size: 1.7rem;
+}
+
 #kat1 {
     grid-column: 4 / 5;
     grid-row: 1 / 2;
+    margin-top: 20vh;
+    font-weight: bold;
 }
 
 #kl2 {
-   grid-column: 1 / 2;
+    grid-column: 1 / 2;
     grid-row: 2 / 3;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20vh;
 }
 
 #img2 {
@@ -115,14 +248,26 @@ h2 {
     flex-direction: column;
 }
 
+.txt2 .wp-block-group__inner-container h3 {
+    font-size: 1.7rem;
+}
+
+
 #kat2 {
     grid-column: 4 / 5;
     grid-row: 2 / 3;
+    margin-top: 20vh;
+    font-weight: bold;
+
 }
 
 #kl3 {
     grid-column: 1 / 2;
     grid-row: 3 / 4;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20vh;
+
 }
 
 #img3 {
@@ -137,14 +282,26 @@ h2 {
     flex-direction: column;
 }
 
+.txt3 .wp-block-group__inner-container h3 {
+    font-size: 1.7rem;
+}
+
+
 #kat3 {
     grid-column: 4 / 5;
     grid-row: 3 / 4;
+    margin-top: 20vh;
+    font-weight: bold;
+
 }
 
 #kl4 {
-   grid-column: 1 / 2;
+    grid-column: 1 / 2;
     grid-row: 4 / 5;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20vh;
+
 }
 
 #img4 {
@@ -159,9 +316,17 @@ h2 {
     flex-direction: column;
 }
 
+.txt4 .wp-block-group__inner-container h3 {
+    font-size: 1.7rem;
+}
+
+
 #kat4 {
     grid-column: 4 / 5;
     grid-row: 4 / 5;
+    margin-top: 20vh;
+    font-weight: bold;
+
 }
 
 /*Sendeplen SLUT */
