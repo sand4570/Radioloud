@@ -9,10 +9,31 @@ Auther: Sandie Neander Petersen
 
 /* LANDING PAGE*/
 
-h1,
-h2,
-h3,
-h4 {}
+/*
+.senestenyt {
+    border: 1px solid black;
+    padding-left: 2vw;
+}
+*/
+
+.forsidekolonne {
+    margin-left: -3vw;
+}
+
+.forsidetxt {
+    margin-left: 3vw;
+
+}
+
+.forside {
+    margin-top: 3vw;
+}
+
+/*
+forsidetxt1 {
+    max-width: 40vw;
+}
+*/
 
 /* LANDING PAGE SLUT*/
 
@@ -66,6 +87,12 @@ button {
     font-size: 1.7rem;
 }
 
+#podcastsh1,
+#oversigt {
+    margin-left: 1.7vw;
+    margin-top: 2vw;
+}
+
 
 
 /* LOOP VIEW SLUT */
@@ -91,8 +118,12 @@ button {
 #episoder {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
+    grid-gap: 50px;
     margin: 1rem;
+}
+
+#main #episoder {
+    margin-bottom: 5vw;
 }
 
 #episoder h3 {
@@ -124,6 +155,25 @@ button {
 .button {
     border-color: #E0043C;
     color: #E0043C;
+}
+
+#pil {
+    max-width: 5vw;
+    margin-left: 45%;
+    animation-name: pulse_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes pulse_kf {
+    from {
+        transform: scale(1.0);
+    }
+
+    to {
+        transform: scale(0.8);
+    }
 }
 
 /*SINGLEVIEW PODCAST SLUT */
@@ -319,7 +369,17 @@ button {
 
 /* Om os */
 
+
+.omos {
+    margin-top: 2vw;
+}
+
+.omos img {
+    margin-top: 5vw;
+}
+
 /* Styling af billede og tekst på om os siden */
+/*
 .om-container .wp-block-group__inner-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -334,6 +394,7 @@ button {
     grid-column: 2 / 3;
 
 }
+*/
 
 .txt .wp-block-group__inner-container {
     display: flex;
@@ -349,19 +410,22 @@ button {
 }
 
 #nationalIMG {
-    grid-column: 1 / 2;
+    grid-column: 4 / 5;
 }
 
 #roskildeIMG {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+
 }
 
 #vegaIMG {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
+
 }
 
 #enigmaIMG {
-    grid-column: 4 / 5;
+    grid-column: 3 / 4;
+
 }
 
 /* Om os Slut */

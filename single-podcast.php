@@ -29,6 +29,7 @@ get_header();
                 <img src="" alt="" class="billede">
             </div>
         </article>
+        <img id="pil" src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/pil.svg" alt="pil">
 
         <h3>Episoder</h3>
         <section id="episoder"></section>

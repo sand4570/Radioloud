@@ -10,7 +10,7 @@ get_header();
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
 
-        <h1>Podcasts</h1>
+        <h1 id="podcastsh1">Podcasts</h1>
         <nav id="filtrering">
             <button data-podcast="alle" class="valgt alleknap">Alle</button>
         </nav>
