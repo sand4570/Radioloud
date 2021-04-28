@@ -436,9 +436,12 @@ button {
 /* Om os Slut */
 
 
-/* Media query single podcast */
+/* Media query  */
 
 @media screen and (max-width:375px) {
+
+    /* single podcast */
+
     #bigimg {
         display: none;
     }
@@ -446,10 +449,21 @@ button {
     .singlearticle {
         display: flex;
     }
-}
 
-.ikoner img {
+    .ikoner img {
     width: 20%;
 }
 
-/* Media query single podcast SLUT */
+/* single podcast SLUT */
+
+/* single episode */
+
+.singleepisode {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Single episode SLUT */
+}
+
+/* Media query SLUT */
