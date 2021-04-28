@@ -16,6 +16,7 @@ get_header();
                 <h2 class="titel"></h2>
 
                 <p class="txt"></p>
+                <button id="sendeplan-knap">Gå til sendeplanen</button>
                 <div class="ikoner">
                     <a href="https://open.spotify.com/" target=”_blank”>
                         <img src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/download.png" alt="Spotify-ikon">
@@ -108,6 +109,7 @@ get_header();
     }
 
     tilbageKnap();
+    sendeplanKnap();
 
     //Denne funktion gør vores tilbage-knap klikbar, og aktiverer visTilbage(), der fortæller at man skal tilbage til den side man lige er kommet fra.
     function tilbageKnap() {
@@ -116,6 +118,13 @@ get_header();
 
     function visTilbage() {
         window.history.back();
+    }
+
+    //Denne function gør vores sendeplans-knap klikbar og sætter den til at gå til sendeplanssiden.
+    function sendeplanKnap() {
+        document.querySelector("#sendeplan-knap").addEventListener("click", () => {
+            window.location.href = "https://neanderpetersen.dk/kea/09_cms/radioloud/sendeplan/"
+        })
     }
 
     getJson();

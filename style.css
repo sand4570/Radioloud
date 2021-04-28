@@ -101,8 +101,6 @@ button {
 
 /*SINGLEVIEW PODCAST */
 
-
-
 .singlearticle {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -117,8 +115,6 @@ button {
     margin-left: 2vw;
 }
 
-
-
 #main #episoder {
     margin-bottom: 5vw;
     display: grid;
@@ -132,7 +128,6 @@ button {
     font-weight: bold;
 }
 
-
 #episoder p {
     font-size: 1rem;
 }
@@ -141,6 +136,7 @@ button {
     width: 80%;
 }
 
+#sendeplan-knap:hover,
 .singletilbage:hover,
 .button:hover,
 .button:active {
@@ -156,6 +152,11 @@ button {
 .button {
     border-color: #E0043C;
     color: #E0043C;
+}
+
+#sendeplan-knap {
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
 
 #pil {
@@ -466,6 +467,37 @@ button {
 /* Media query  mobile */
 
 @media screen and (max-width:375px) {
+
+    /* FILTRERINGSKANPPER */
+
+.alleknap,
+.filter {
+    margin-left: 1.7vw;
+}
+
+[type=button],
+[type=submit],
+button {
+    border-color: #E0043C;
+    color: #E0043C;
+}
+
+#filtrering button:focus {
+    background-color: #E0043C;
+    color: white;
+}
+
+#filtrering button:hover {
+    background-color: #E0043C;
+    color: white;
+}
+
+.valgt {
+    background-color: #E0043C;
+    color: white;
+}
+
+/* FILTRERINGSKNAPPER SLUT */
 
     /* single podcast */
 
