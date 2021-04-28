@@ -26,7 +26,7 @@ get_header();
                 </div>
             </div>
             <div>
-                <img src="" alt="" class="billede">
+                <img src="" alt="" class="billede" id="bigimg">
             </div>
         </article>
         <img id="pil" src="https://neanderpetersen.dk/kea/09_cms/radioloud/wp-content/uploads/2021/04/pil.svg" alt="pil">
