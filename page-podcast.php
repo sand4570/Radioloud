@@ -14,6 +14,10 @@ get_header();
 
         <h1 id="podcastsh1">Podcasts</h1>
 
+        <div id="filter-collapse">
+            <button>Filtrer</button>
+        </div>
+
         <nav id="filtrering">
             <button data-podcast="alle" class="valgt alleknap">Alle</button>
         </nav>
@@ -45,6 +49,7 @@ get_header();
 
     function start() {
         getJson();
+        filterburger();
     }
 
     //Nedenstående variabler skal vi bruge, når vi indhenter al json. Via disse links kan vi både se alle vores podcast custom posts, og de kategorier vi har oprettet til filtrering
@@ -108,6 +113,18 @@ get_header();
 
                 liste.appendChild(klon);
             }
+        })
+    }
+
+    //Denne funktion aktiverer den gemte filtreringsmenu på mobil.
+    function filterburger() {
+        document.querySelector("#filter-collapse button").addEventListener("click", () => {
+            let filterGroup = document.querySelector("#filtrering");
+            if (filterGroup.style.display === "") {
+                    filterGroup.style.display = "flex";
+                } else {
+                    filterGroup.style.display = "";
+                }
         })
     }
 
