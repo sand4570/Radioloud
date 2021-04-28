@@ -435,8 +435,35 @@ button {
 
 /* Om os Slut */
 
+/* Media query tablet */
 
-/* Media query  */
+@media screen and (max-width:768px) {
+
+    .sendeplan .wp-block-group__inner-container {
+        grid-template-columns: 0.5fr 1.1fr 2fr;
+    }
+
+    #kl1 {
+        font-size: 1.7rem;
+    }
+
+    #kl2 {
+        font-size: 1.7rem;
+    }
+
+    #kl3 {
+        font-size: 1.7rem;
+    }
+
+    #kl4 {
+        font-size: 1.7rem;
+    }
+
+}
+
+/* Media query tablet SLUT */
+
+/* Media query  mobile */
 
 @media screen and (max-width:375px) {
 
@@ -451,19 +478,60 @@ button {
     }
 
     .ikoner img {
-    width: 20%;
+        width: 20%;
+    }
+
+    /* single podcast SLUT */
+
+    /* single episode */
+
+    .singleepisode {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* Single episode SLUT */
+
+    /* sendeplan */
+
+    .days .wp-block-group__inner-container {
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5vw;
+    }
+
+    .sendeplan .wp-block-group__inner-container {
+        display: block;
+    }
+
+    #kl1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #kl2 {
+        margin-top: 5vh;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #kl3 {
+        margin-top: 5vh;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #kl4 {
+        margin-top: 5vh;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* sendeplan Slut */
+
 }
 
-/* single podcast SLUT */
 
-/* single episode */
 
-.singleepisode {
-    display: grid;
-    grid-template-columns: 1fr;
-}
 
-/* Single episode SLUT */
-}
 
-/* Media query SLUT */
+/* Media query mobile SLUT */
