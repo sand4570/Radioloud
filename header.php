@@ -7,6 +7,8 @@
  * @package HelloElementor
  */
 
+// Som også udskrevet ovenfor, sørger vores header.php for at hente headeren'en fra vores parent theme. Den finder en header.php i mappen template-parts, som er udgangspunktet for vores header. Vi har på vores site stylet både header og footer i WP backend, og der er derfor ikke tilføjet kode hertil.
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }

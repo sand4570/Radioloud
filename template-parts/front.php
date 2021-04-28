@@ -1,3 +1,4 @@
+<!--I denne fil, har vi al det indhold der skal skrives direkte ud på forsiden.-->
 <html>
 
 <div id="page-container">

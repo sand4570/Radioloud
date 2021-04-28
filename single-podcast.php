@@ -6,7 +6,7 @@
 
 get_header();
 ?>
-
+<!--I vores primary section, har vi al indhold som det skal skrives ud på siden med podcast single view. -->
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
 
@@ -37,6 +37,7 @@ get_header();
     </main>
 </section>
 
+<!--I nedenstående template-tag, findes strukturen for hvordan hver enkel episode i loop viewet på single viewet for podcasts skal være opbygget og struktureret. -->
 <template>
     <article>
         <img src="" alt="">
@@ -46,17 +47,20 @@ get_header();
     </article>
 </template>
 
-
+<!-- I scriptet til vores episoder single view, har vi startet med at sætte variabler, der skal bruges i senere funktioner.-->
 <script>
     let podcast;
     let episoder;
     let aktuelpodcast = <?php echo get_the_ID() ?>;
 
+
+    //Nedenstående variabler skal vi bruge, når vi indhenter al json. Via disse links kan vi både se alle vores podcast- og episode custom posts
     const dbUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/podcast/" + aktuelpodcast;
     const episodeUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/episoder?per_page=100";
 
     const container = document.querySelector("#episoder")
 
+    //I vores asynkrone funktion, sætter vi to variabler, der definerer at der skal afventes med afhentningen af indholdet fra vores url-variabler. Derefter beder vi om at aktivere visPodcasts() og visEpisoder(), der sørger for at vores podcasts og episoder skal vises på siden når al json er hentet ind fra vores url-variabler.
     async function getJson() {
         console.log("getJson");
         const data = await fetch(dbUrl);
@@ -70,6 +74,7 @@ get_header();
         visEpisoder();
     }
 
+    //Denne funktion udskriver al podcast json på vores site, når al indholdet er afhentet. Vi tilføjer her content til vores HTML-struktur.
     function visPodcasts() {
         console.log("visPodcasts");
         document.querySelector(".titel").textContent = podcast.title.rendered;
@@ -78,6 +83,7 @@ get_header();
 
     }
 
+    //Denne funktion udskriver al episode json på vores site, når al indholdet er afhentet. Vi tilføjer her content til vores template-tag, som vi kloner ud i sektionen i vores main-tag. For-each-funktionen gør, at dette sker for hver episode vi har oprettet.
     function visEpisoder() {
         console.log("viserEpisoderne");
         let temp = document.querySelector("template");
@@ -103,6 +109,7 @@ get_header();
 
     tilbageKnap();
 
+    //Denne funktion gør vores tilbage-knap klikbar, og aktiverer visTilbage(), der fortæller at man skal tilbage til den side man lige er kommet fra.
     function tilbageKnap() {
         document.querySelector(".singletilbage").addEventListener("click", visTilbage);
     }

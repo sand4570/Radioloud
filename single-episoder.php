@@ -7,6 +7,7 @@
 get_header();
 ?>
 
+<!--I vores primary section, har vi al indhold som det skal skrives ud på siden med episoder single view. -->
 <section id="primary" class="content-area">
     <main id="main" class="site-main">
 
@@ -34,14 +35,17 @@ get_header();
 </section>
 
 
+
 <script>
+    // I scriptet til vores episoder single view, har vi startet med at sætte variabler, der skal bruges i senere funktioner.
     let episode;
     let aktuelepisode = <?php echo get_the_ID() ?>;
     console.log("episode:", aktuelepisode);
 
+    //Nedenstående variabel skal vi bruge, når vi indhenter json med episoder. Via dette link kan vi se alle vores episode custom posts.
     const episodeUrl = "https://neanderpetersen.dk/kea/09_cms/radioloud/wp-json/wp/v2/episoder/" + aktuelepisode;
 
-
+    //I vores asynkrone funktion, sætter vi først en variabel, der definerer at der skal afventes med afhentningen af indholdet fra vores url-variabel. Derefter beder vi om at aktivere visEpisoder(), der sørger for at vores episoder skal vises på siden når al json er hentet ind fra vores url-variabel.
     async function getJson() {
         const data = await fetch(episodeUrl);
         episode = await data.json();
@@ -50,6 +54,7 @@ get_header();
         visEpisoder();
     }
 
+    //Denne funktion udskriver al vores json på vores site, når al indholdet er afhentet. Vi tilføjer her content til vores HTML-struktur.
     function visEpisoder() {
         console.log("visPodcasts");
         document.querySelector(".titel").textContent = episode.title.rendered;
@@ -61,6 +66,7 @@ get_header();
 
     tilbageKnap();
 
+    //Denne funktion gør vores tilbage-knap klikbar, og aktiverer visTilbage(), der fortæller at man skal tilbage til den side man lige er kommet fra.
     function tilbageKnap() {
         document.querySelector(".singletilbage").addEventListener("click", visTilbage);
     }
