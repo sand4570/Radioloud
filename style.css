@@ -460,6 +460,41 @@ button {
         font-size: 1.7rem;
     }
 
+    .partners .wp-block-group__inner-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+
+    #nationalIMG {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    #roskildeIMG {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+
+    }
+
+    #vegaIMG {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+
+    }
+
+    #enigmaIMG {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+
+    }
+
+    .omos img {
+        margin-top: 0vw;
+    }
+
+
 }
 
 /* Media query tablet SLUT */
@@ -470,34 +505,34 @@ button {
 
     /* FILTRERINGSKANPPER */
 
-.alleknap,
-.filter {
-    margin-left: 1.7vw;
-}
+    .alleknap,
+    .filter {
+        margin-left: 1.7vw;
+    }
 
-[type=button],
-[type=submit],
-button {
-    border-color: #E0043C;
-    color: #E0043C;
-}
+    [type=button],
+    [type=submit],
+    button {
+        border-color: #E0043C;
+        color: #E0043C;
+    }
 
-#filtrering button:focus {
-    background-color: #E0043C;
-    color: white;
-}
+    #filtrering button:focus {
+        background-color: #E0043C;
+        color: white;
+    }
 
-#filtrering button:hover {
-    background-color: #E0043C;
-    color: white;
-}
+    #filtrering button:hover {
+        background-color: #E0043C;
+        color: white;
+    }
 
-.valgt {
-    background-color: #E0043C;
-    color: white;
-}
+    .valgt {
+        background-color: #E0043C;
+        color: white;
+    }
 
-/* FILTRERINGSKNAPPER SLUT */
+    /* FILTRERINGSKNAPPER SLUT */
 
     /* single podcast */
 
