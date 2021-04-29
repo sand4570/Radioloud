@@ -233,6 +233,10 @@ button {
 
 /* Sendeplan */
 
+#sendeplan-tilbage {
+    margin-left: 13vw;
+}
+
 /* Styling af datoer */
 .days .wp-block-group__inner-container {
     display: grid;
@@ -501,6 +505,10 @@ button {
 
 }
 
+ #sendeplan-tilbage {
+    margin-left: 10vw;
+}
+
 /* Media query tablet SLUT */
 
 /* Media query  mobile */
@@ -576,6 +584,10 @@ button {
     /* Single episode SLUT */
 
     /* sendeplan */
+
+    #sendeplan-tilbage {
+    margin-left: 2vw;
+}
 
     .days .wp-block-group__inner-container {
         grid-template-columns: repeat(5, 1fr);

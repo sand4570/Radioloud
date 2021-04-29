@@ -16,7 +16,7 @@ get_header();
 
 ?>
 
-<button class="singletilbage">Tilbage</button>
+<button id="sendeplan-tilbage" class="singletilbage">Tilbage</button>
 
     <?php
 
