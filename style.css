@@ -507,6 +507,28 @@ button {
 
 @media screen and (max-width:375px) {
 
+    /* FORSIDE */
+
+    .forsidekolonne {
+        max-width: 350px;
+        overflow-x: scroll;
+    }
+
+    .forsidekolonne .wp-block-group__inner-container {
+        display: flex;
+        flex-direction: row;
+        min-width: 1200px;
+    }
+
+    .newsimg img {
+        height: 220px;
+        width: 300px;
+    }
+
+
+
+    /* FORSIDE SLUT */
+
     /* FILTRERINGSKANPPER */
 
     #filter-collapse {

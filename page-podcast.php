@@ -15,7 +15,7 @@ get_header();
         <h1 id="podcastsh1">Podcasts</h1>
 
         <div id="filter-collapse">
-            <button>Filtrer</button>
+            <button>Vælg kategori</button>
         </div>
 
         <nav id="filtrering">
