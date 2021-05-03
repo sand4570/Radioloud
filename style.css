@@ -501,13 +501,14 @@ button {
     .omos img {
         margin-top: 0vw;
     }
-
-
-}
-
- #sendeplan-tilbage {
+    #sendeplan-tilbage {
     margin-left: 10vw;
 }
+
+
+}
+
+
 
 /* Media query tablet SLUT */
 
